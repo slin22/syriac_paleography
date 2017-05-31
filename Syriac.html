@@ -2,32 +2,52 @@
 <html>
 <head>
 <style>
-
+img {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	width: 150px;
+}
+img:hover {
+	box-shadow: 0 0 2px 1px rgb(255, 182, 193);
+	
+}
 </style>
 </head>
 <body>
 
 <h1>Syriac Paleography</h1>
 
-
-<input type="search" id="mySearch" placeholder="Name">
+<form action = "/action_page.php">
+Name:<br>
+<input type ="text" name = "filename">
 <br>
-<input type="search" id="mySearch" placeholder="Date">
+Date:<br>
+<input type="date" name = "date">
+</form>
+
 <button onclick="myFunction()">Search</button>
 <br>
-
-
+<br>
+<a target = "_blank" href="/beach_images/havaianas07-2400px.png">
+  <img src="/beach_images/havaianas07-2400px.png" alt="beach" style="width:150px">
+ </a>
 <br>
 
 <script>
 
 function myFunction() {
-	var y = document.createElement("IMG");
-	y.setAttribute("src", "havaianas07-2400px.png");
-	y.setAttribute("width", "100");
-	document.body.appendChild(y);
+
+	var x = document.createElement("IMG");
+	x.setAttribute("src", "/beach_images/havaianas07-2400px.png");
+	x.setAttribute("width", "100");
+
+	document.body.appendChild(x);
+
+
 
 }
+
 
 </script>
 </body>
